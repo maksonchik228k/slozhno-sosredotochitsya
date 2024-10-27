@@ -36,6 +36,7 @@
   border-left: 1px solid var(--decor-color);
   border-bottom: 1px solid var(--decor-color);
 }
+
 .decorated-zone::after {
   content: "";
   position: absolute;
@@ -56,17 +57,21 @@
   border: none;
   padding: 0 12px;
 }
+
 .header__theme-menu-button_active {
   outline: 1px solid var(--decor-color);
   pointer-events: none;
 }
+
 .header__theme-menu-button:hover {
   outline: 1px solid var(--hover-color);
   cursor: pointer;
 }
+
 .header__theme-menu-button:focus {
   outline: none;
 }
+
 .header__theme-menu-button:focus-visible {
   border-bottom: 1px solid var(--decor-color);
 }
@@ -123,12 +128,15 @@
   text-shadow: 2px 2px var(--subtitle-bg-color);
   text-decoration: none;
 }
+
 .text a:hover {
-  text-decoration: underline;
+  border-bottom: 1px solid #F1B2CE;
 }
+
 .text a:focus {
   outline: none;
 }
+
 .text a:focus-visible {
   outline: 1px solid var(--main-text-color);
 }
@@ -174,9 +182,10 @@
   grid-auto-rows: auto;
   grid-template-areas: "title ." "title ." "title ." "title ." "title ." "title .";
 }
+
 .hints .card {
   grid-column-start: 2;
-  margin-left: -6px;
+  margin-right: 6px;
 }
 
 .images {
@@ -188,6 +197,8 @@
   gap: 20px;
   justify-content: center;
   margin-block-start: 82px;
+  object-fit: cover;
+  width: 100%;
 }
 
 .images_sunset {
@@ -253,13 +264,13 @@
 .rec::after {
   position: absolute;
   content: "";
-  width: 12px;
-  height: 12px;
-  margin-top: 5px;
-  margin-left: 5px;
-  border: 2px solid var(--decor-color);
+  width: 9px;
+  height: 9px;
+  margin-top: 7px;
+  margin-left: 9px;
+  border: 5px solid var(--decor-color);
   border-radius: 50%;
-  box-shadow: inset 10px 10px var(--decor-color);
+  box-shadow: 0 0 4px 2px #ff0070;
 }
 
 @media (width <= 768px) {
@@ -285,6 +296,7 @@
   
   .header__label {
     margin-block-start: 0;
+    padding-block-start: 17px;
   }
 
   .title_invers {
