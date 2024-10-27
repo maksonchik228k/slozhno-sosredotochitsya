@@ -266,111 +266,136 @@
   .header {
     min-height: 1024px;
   }
+  
   .header .title {
     width: 47%;
+    margin-block-end: 184px;
   }
+  
   .header__theme-menu {
     display: block;
   }
+  
   .header__theme-menu-list {
     flex-direction: column;
     align-items: self-end;
     margin-block-start: 11em;
     padding-inline-end: 20px;
   }
+  
   .header__label {
     margin-block-start: 0;
   }
-  .header .title {
-    margin-block-end: 184px;
-  }
+
   .title_invers {
     width: 236px;
   }
+  
   .about {
     gap: 20px;
   }
+  
   .problem {
     display: flex;
     flex-direction: column;
     margin-top: 62px;
   }
+  
   .hints .card {
     margin-left: 0;
   }
+  
   .footer {
     min-height: 1024px;
   }
 }
+
 @media (width <= 600px) {
   :root {
     --font-size-label: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
+  
   .header {
     min-height: 668px;
   }
+  
   .about, .problem, .hints, .images {
     display: flex;
     flex-direction: column;
   }
+  
   .header__label {
     margin-block-start: 72px;
     line-height: 96px;
     margin-inline-start: 10px;
     margin-block-end: 54px;
   }
+  
   .header__theme-menu-list {
     margin-block-start: 3.5em;
     padding-inline-end: 12px;
   }
+  
   .rec {
     right: 38px;
     top: 12px;
   }
+  
   .decorated-zone::before {
     left: 10px;
     bottom: 10px;
   }
+  
   .decorated-zone::after {
     right: 10px;
     top: 10px;
   }
+  
   .main {
     margin: 0 10px;
   }
+  
   .header .title {
     margin-inline: 10px;
     left: auto;
     width: 95%;
   }
+  
   .title_invers {
     width: 100%;
   }
+  
   .about {
     margin-top: 40px;
     margin-bottom: 54px;
     gap: 24px;
   }
+  
   .problem {
     margin-bottom: 52px;
     margin-top: 54px;
     gap: 22px;
   }
+  
   .hints {
     gap: 22px;
   }
+  
   .images {
     margin-block-start: 46px;
     gap: 11px;
   }
+  
   .footer {
     margin-block-start: 36px;
     min-height: 668px;
   }
+  
   .footer::before {
     left: 10px;
     bottom: 10px;
   }
+  
   .footer::after {
     right: 10px;
     top: 12px;
