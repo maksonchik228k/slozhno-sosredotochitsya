@@ -130,7 +130,7 @@
 }
 
 .text a:hover {
-  border-bottom: 1px solid #F1B2CE;
+  border-bottom: 1px solid var(--main-text-color);
 }
 
 .text a:focus {
@@ -147,13 +147,17 @@
   width: 315px;
 }
 
-.about {
+.section {
   display: grid;
+  margin-block-end: 80px;
+}
+
+.about {
   grid-template-columns: 1fr 2fr;
   grid-template-areas: "title ." "title .";
-  gap: 12px;
   margin-top: 60px;
   margin-bottom: 64px;
+  gap: 10px;
 }
 
 .about__wrapper {
@@ -167,24 +171,23 @@
 }
 
 .problem {
-  display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
   grid-template-areas: "title title title" ". . .";
-  margin-top: 72px;
-  margin-bottom: 82px;
+  margin-top: 75px;
+  margin-bottom: 80px;
+  gap: 20px;
 }
 
 .hints {
-  display: grid;
-  gap: 20px;
   grid-template-columns: 1fr 2fr;
   grid-auto-rows: auto;
   grid-template-areas: "title ." "title ." "title ." "title ." "title ." "title .";
+  gap: 20px 10px;
 }
 
 .hints .card {
   grid-column-start: 2;
+
 }
 
 .images {
@@ -195,7 +198,7 @@
   grid-template-areas: "title title title" "sunset sunset ice" "tape book ice" "tape street street";
   gap: 20px;
   justify-content: center;
-  margin-block-start: 82px;
+  margin-block-start: 79px;
   object-fit: cover;
   width: 100%;
 }
@@ -258,6 +261,7 @@
   font-size: 18px;
   right: 48px;
   top: 20px;
+  visibility: var(--rec-decor-visibility, visible);
 }
 
 .rec::after {
@@ -312,6 +316,10 @@
     margin-top: 62px;
   }
   
+  .hints {
+    gap: 20px 20px;
+  }
+
   .hints .card {
     margin-left: 0;
   }
@@ -328,6 +336,7 @@
   
   .header {
     min-height: 668px;
+    height: 100%;;
   }
   
   .about, .problem, .hints, .images {
@@ -336,10 +345,10 @@
   }
   
   .header__label {
-    margin-block-start: 72px;
+    margin-block-start: 39px;
     line-height: 96px;
     margin-inline-start: 10px;
-    margin-block-end: 54px;
+    margin-block-end: 41px;
   }
   
   .header__theme-menu-list {
@@ -370,6 +379,7 @@
     margin-inline: 10px;
     left: auto;
     width: 95%;
+    margin-block-end: 67px;
   }
   
   .title_invers {
@@ -377,7 +387,7 @@
   }
   
   .about {
-    margin-top: 40px;
+    margin-top: 38px;
     margin-bottom: 54px;
     gap: 24px;
   }
@@ -400,6 +410,7 @@
   .footer {
     margin-block-start: 36px;
     min-height: 668px;
+    height: 100%;
   }
   
   .footer::before {

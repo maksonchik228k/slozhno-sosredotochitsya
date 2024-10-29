@@ -15,11 +15,10 @@
   --hover-color: #3534306e;
   --label-color: #FFC2E6;
   --text-shadow-color: #FF0070;
+  --rec-decor-visibility: hidden;
 }
 
-.page.theme_light .rec {
-  display: none;
-}
+
 
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
@@ -37,6 +36,8 @@
       --hover-color: #3534306e;
       --label-color: #FFC2E6;
       --text-shadow-color: #FF0070;
+      --rec-decor-visibility: hidden;
+      
     }
     }
     
