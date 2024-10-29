@@ -400,6 +400,7 @@
   
   .hints {
     gap: 22px;
+    margin-block-end: 48px;
   }
   
   .images {
